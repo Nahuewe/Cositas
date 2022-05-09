@@ -12,8 +12,26 @@ body {
     background-color: #141414;
 }
 
-main {
-    color: #ffffff;
+html {
+    scroll-behavior: smooth;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #E52113;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #e52113c0;
 }
 
 /* Navbar */
@@ -35,26 +53,38 @@ main {
 }
 
 .navbar--items a:hover {
-    color: #ffff00d2;
+    color: #353434;
     transition-duration: 1000ms;
 }
 
 /* Main */
 
-main h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1%;
+.title {
+    height: 90vh;
+    width: 100%;
+}
+
+.section {
+    color: #fff;
     margin-bottom: 1%;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+.portadas {
+    margin-left: 5%;
+}
+
+.ion-chevron-right {
+    color: #54B9C5;
 }
 
 /* Footer (Reutilizando codigo de un proyecto anterior) */
 
 .footer {
     padding: 30px 0;
-    background-color: #faebd7;
-    color: #4b4c4d;
+    background-color: #141414;
+    color: #ffffff;
 }
 
 .footer__pages {
@@ -144,9 +174,9 @@ main h1 {
 .animate--text {
     text-transform: uppercase;
     background-image: linear-gradient(-225deg,
-            #231557 0%,
-            #44107a 29%,
-            #7831b3 67%,
+            #9385c5 0%,
+            #886fa3 29%,
+            #887399 67%,
             #b84427 100%);
     background-size: auto auto;
     background-clip: border-box;
