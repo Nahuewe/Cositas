@@ -37,7 +37,7 @@ html {
 /* Navbar */
 
 .navbar {
-    background-color: #ff0000;
+    background-color: #E52113;
     padding: 10px 0;
     position: fixed;
     width: 100%;
@@ -63,7 +63,7 @@ html {
 /* Main */
 
 .title {
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     margin-top: 2%;
 }
@@ -82,7 +82,7 @@ html {
 .portadas:hover {
     transform: scale(1.2);
     transition: 0.4s;
-    filter: saturate(1.5);
+    filter: brightness(1.1);
 }
 
 .ion-chevron-right {
