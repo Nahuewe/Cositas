@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="./image/png" href="../source/Netflix-icon.png">
     <link rel="stylesheet" href="../css/style.css">
     <title>Cuenta</title>
 </head>
@@ -13,14 +14,35 @@
             <ul class="navbar--items">
                 <li><a href="../index.html"> Inicio </a></li>
                 <li><a href="./contacto.html"> Contacto </a></li>
-                <li><a href="./soporte.html"> Soporte </a></li>
                 <li><a href="./cuenta.html"> Cuenta </a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-
+        <div class="cuenta">
+            <div class="cuenta__main">  	
+                <input type="checkbox" id="chk" aria-hidden="true">
+                <div class="signup">
+                    <form>
+                        <label class="label" for="chk" aria-hidden="true">Registrarse</label>
+                        <input class="input" type="text" name="txt" placeholder="Nombre de Usuario" required="">
+                        <input class="input" type="email" name="email" placeholder="Correo" required="">
+                        <input class="input" type="password" name="pswd" placeholder="Contraseña" required="">
+                        <button class="button">Registrarse</button>
+                    </form>
+                </div>
+    
+                <div class="login">
+                    <form>
+                        <label class="label" for="chk" aria-hidden="true">Ingresar</label>
+                        <input class="input" type="email" name="email" placeholder="Correo" required="">
+                        <input class="input" type="password" name="pswd" placeholder="Contraseña" required="">
+                        <button class="button">Ingresar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>

@@ -37,11 +37,18 @@ html {
 /* Navbar */
 
 .navbar {
-    background-color: #E52113;
+    background-color: #000000;
     padding: 10px 0;
     position: fixed;
-    width: 100%;
     z-index: 1;
+    width: 100%;
+}
+
+.navbar--form {
+    background-color: #000000;
+    padding: 10px 0;
+    z-index: 1;
+    width: 100%;
 }
 
 .navbar--items {
@@ -50,15 +57,49 @@ html {
     justify-content: space-around;
 }
 
+.navbar--items li {
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+}
+
 .navbar--items a {
     color: #ffffff;
     text-decoration: none;
     transition: 1s;
+    font-weight: 400;
+    size: 14px;
+    line-height: 17px;
+    position: relative;
+    transition: 0.5s;
 }
 
 .navbar--items a:hover {
-    color: #353434;
+    color: #b3b3b3;
 }
+
+.navbar--items a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    top: 100%;
+    left: 0;
+    background: #E52113;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: center;
+    margin-top: 3%;
+}
+
+.navbar--items a:hover::after {
+    transform: scaleX(1);
+    transform-origin: center;
+}
+
+/* .logo {
+    width: 100px;
+    margin-left: 1%;
+} */
 
 /* Main */
 
@@ -89,6 +130,106 @@ html {
 
 .ion-chevron-right {
     color: #54B9C5;
+}
+
+/* Contacto */
+
+.body--form {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #f3f3f3;
+    margin: 0;
+}
+
+.body--form::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: #1b1b32;
+    background-image:  url(https://picoinformativo.com/wp-content/uploads/2021/02/NETFLIX.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+button {
+    border: none;
+}
+
+.form--body {
+    background: rgba(39, 37, 37, 0.741);
+    padding: 2.5rem 0.625rem;
+    border-radius: 0.25rem;
+}
+
+.container--form {
+    width: 100%;
+    margin: 5rem auto 1rem auto;
+}
+
+.form--group {
+    margin: 1rem 2rem 1rem 2rem;
+    padding: 0.25rem;
+}
+
+.form--control {
+    display: block;
+    width: 100%;
+    height: 2.375rem;
+    padding: 0.375rem 0.75rem;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form--control:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.input--radio,
+.input--checkbox {
+    display: inline-block;
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+}
+
+.input--textarea {
+    min-height: 120px;
+    width: 100%;
+    padding: 0.625rem;
+    resize: none;
+}
+
+.submit--button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    color: black;
+    background: #b12a18;
+    color: inherit;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.submit--button:hover {
+    background: #a71f1bc0;
+}
+
+@media (min-width: 768px) {
+    .container--form {
+        max-width: 720px;
+    }
 }
 
 /* Footer (Reutilizando codigo de un proyecto anterior) */
