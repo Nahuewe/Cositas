@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="./image/png" href="../source/Netflix-icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <title>Contacto</title>
 </head>
+
 <body>
     <header>
         <nav class="navbar--form">
@@ -23,17 +26,19 @@
 
         <div class="container--form">
             <form class="form--body">
-                
+
                 <div class="form--group">
                     <label id="name-label" for="name">Nombre</label>
-                    <input type="text" name="name" id="name" class="form--control" placeholder="Ingresa tu nombre..." required>
+                    <input type="text" name="name" id="name" class="form--control" placeholder="Ingresa tu nombre..."
+                        required>
                 </div>
-    
+
                 <div class="form--group">
                     <label id="email-label" for="email">Correo</label>
-                    <input type="email" name="email" id="email" class="form--control" placeholder="Ingresa tu Email..." required>
+                    <input type="email" name="email" id="email" class="form--control" placeholder="Ingresa tu Email..."
+                        required>
                 </div>
-    
+
                 <div class="form--group">
                     <p>¿Que opcion describe mejor tu problema o consulta?</p>
                     <select id="dropdown" name="role" class="form--control" required>
@@ -44,24 +49,38 @@
                         <option value="otro">Otro</option>
                     </select>
                 </div>
-        
+
                 <div class="form--group">
                     <p>Dejanos un comentario</p>
-                    <textarea id="comments" class="input--textarea" name="comment" placeholder="Escribe tu comentario..."></textarea>
+                    <textarea id="comments" class="input--textarea" name="comment"
+                        placeholder="Escribe tu comentario..."></textarea>
                 </div>
-    
+
                 <div class="form--group">
                     <button type="submit" id="submit" class="submit--button">Enviar</button>
                 </div>
-    
+
             </form>
         </div>
 
     </main>
 
-    <footer>
-
+    <footer class="footer">
+        <div class="social"><a href="https://github.com/Nahuewe" rel="noreferrer" target="_blank"><i
+                    class="icon ion-social-github"></i></a><a href="https://www.instagram.com/nahueh/"
+                rel="noreferrer" target="_blank"><i class="icon ion-social-instagram"></i></a><a
+                href="https://twitter.com/home" rel="noreferrer" target="_blank"><i
+                    class="icon ion-social-twitter"></i></a><a href="https://www.linkedin.com/in/nahuelsoriaparodi/"
+                rel="noreferrer" target="_blank"><i class="icon ion-social-linkedin"></i></a></div>
+        <ul class="list-inline">
+            <li class="list-inline-item hvr--float"><a href="../index.html">Inicio</a></li>
+            <li class="list-inline-item hvr--float"><a href="#">Terminos</a></li>
+            <li class="list-inline-item hvr--float"><a href="#">Politicas de Privacidad</a></li>
+        </ul>
+        <p class="copyright animate--text text-center"><a target="blank_"
+                href="https://linktr.ee/Nahuel_Soria_Parodi"> → Nahuel Soria Parodi © 2022 ← </a></p>
     </footer>
     <script src="../js/style.js"></script>
 </body>
+
 </html>
